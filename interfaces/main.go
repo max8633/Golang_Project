@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type bot interface {
+	//with func getGreeting() and string return type can be considered as bot type
 	getGreeting() string
 }
 
