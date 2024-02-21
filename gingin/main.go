@@ -15,6 +15,7 @@ func (uc *UserController) getUserInfo(c *gin.Context) {
 	c.JSON(200, gin.H{"id": userID, "name": "Max Kuo", "email": "MaxKuo@example.com"})
 }
 
+// Middleware use to print related log
 func loggerMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		start := time.Now()
@@ -24,6 +25,7 @@ func loggerMiddleware() gin.HandlerFunc {
 	}
 }
 
+// Middleware use to deal with authentication, but not really do auth features here!
 func authMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		apiKey := c.GetHeader("X-API-Key")
