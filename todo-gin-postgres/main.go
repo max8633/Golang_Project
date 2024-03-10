@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/max8633/todo-gin-postgres/controllers"
-	"github.com/max8633/todo-gin-postgres/initializers"
+	"github.com/max8633/Golang_Project/todo-gin-postgres/controllers"
+	"github.com/max8633/Golang_Project/todo-gin-postgres/initializers"
 )
 
 func init() {

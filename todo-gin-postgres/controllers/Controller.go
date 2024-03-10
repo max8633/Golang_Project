@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/max8633/todo-gin-postgres/initializers"
-	"github.com/max8633/todo-gin-postgres/models"
+	"github.com/max8633/Golang_Project/todo-gin-postgres/initializers"
+	"github.com/max8633/Golang_Project/todo-gin-postgres/models"
 )
 
 func PostCreate(c *gin.Context) {
